@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Xavier
  */
-public class Application extends AuthenticatedWebApplication {
+public final class Application extends AuthenticatedWebApplication {
 
     private CustomPropertyPlaceholder propertyPlaceholderConfigurer;
     private static final Logger LOGGER = LoggerFactory.getLogger(Application.class);

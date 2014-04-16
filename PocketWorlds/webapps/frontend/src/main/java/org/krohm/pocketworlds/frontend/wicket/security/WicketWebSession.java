@@ -30,7 +30,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Arnaud
  */
-public class WicketWebSession extends AbstractAuthenticatedWebSession {
+public final class WicketWebSession extends AbstractAuthenticatedWebSession {
 
     private String userId;
     private String password;
