@@ -1,0 +1,1369 @@
+
+
+.logoutLink{
+    position:absolute; left:1250px ;top:4px; 
+}
+
+.lockImage{
+    width:18; height:18
+}
+
+.productTab {
+    list-style: none;
+    line-height: 50px
+}
+
+.productTab a {
+    text-decoration: none;
+}
+
+.productTab a span {
+    font-size: 1.5em;
+    color: rgb(0,90,175);
+    text-decoration: none;
+}
+
+.inputdiv{
+    position:relative; height:35px
+}
+
+.inputLabel{
+    position:relative; left:85px
+}
+
+.inputField{
+    position:absolute; left:320px; width:250px;
+    padding:3px 5px;
+    border: solid 1px #aaa;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+.button {
+    position:relative; left:300px; width:125px;
+}
+
+.title {
+    FONT-SIZE: 1.1em; FONT-WEIGHT: bolder;left:0px
+}
+
+.mainDiv{
+    position:absolute; 
+    border: 1px solid #aaa;
+    padding: 25px;
+    margin: 50px;
+}
+
+
+
+
+.cvsDownload {
+    float: right;
+}
+
+
+.phoneForm {
+    width: 200px; margin: 50px;
+}
+
+.inputPhoneForm {
+    width: 200px; margin: 50px; padding: 5px; border: solid 1px #ccc;
+}
+
+.submitButton {
+    background-color: #ccc;
+    border: 0;
+    padding: 6px;
+    width: 100px; margin: 50px;
+}
+
+.phoneForm2 input {
+    position:absolute; left:80px;
+}
+
+.phoneForm2 label {
+    position:absolute; left:110px;
+}
+
+.submitButton2 {
+    background-color: #ccc;
+    border: 0;
+    padding: 6px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+/*************************/
+/* SECTION 1 - MAIN BODY */
+/*************************/
+
+/*-------------------------------*/
+/* Section 1.1 - Page definition */
+/*-------------------------------*/
+
+body {
+    font-size: 82.5%; margin: 0em auto; padding: 0em; font-family: 'Segoe UI', verdana, arial, sans-serif; 
+}
+
+#page-container {
+     margin: 0px auto; padding: 0px;
+}
+
+#page-login {
+    width: 500px; margin: 0px auto; color: white; font-weight: bold; padding-top: 50px; 
+}
+
+/**********************/
+/* SECTION 2 - HEADER */
+/**********************/
+
+/*--------------------------------------*/
+/* Section 2.1 - Global navigation menu */
+/*--------------------------------------*/
+
+.nav-global-container {
+    float: right; margin-right: 15px; 
+}
+
+.nav-global ul {	
+    float: right; margin: 0px; padding: 0px; list-style: none;
+}	
+
+.nav-global li {
+    float: left; white-space: nowrap; text-transform: uppercase;
+}
+
+.nav-global li a {
+    display: block; margin: 0px; padding: 0px 5px; color: rgb(150,150,150); text-decoration: none; font-size: 100%;
+}
+
+.nav-global a:hover {
+    background-color: rgb(255,255,255); color: rgb(0,0,0); text-decoration: none;
+}
+
+.img-flag {
+    display: block; height: 1.0em; margin: 0px; padding: 0px; border: solid 1px rgb(0,0,0);
+}
+
+/*-----------------------------------*/
+/* Section 2.2 - Sitename and Banner */
+/*-----------------------------------*/
+
+.img-header {
+    /*clear: both; float: left; width: 780px; height: 110px; margin: 0px; padding: 0px;*/
+    float: left; margin-left: 5px; width: 200px; background: url(../img/head.jpg) no-repeat left -5px; 
+}
+
+.site-slogan {
+    margin-top: 5px; margin-bottom: 30px; padding-top: 80px; margin-left: 270px; color: rgb(0,90,175); font-size: 300%;
+}
+
+/*------------------------------------*/
+/* Section 2.3 - Main navigation menu */
+/*------------------------------------*/
+
+.nav-main {
+    padding: 2px 5px 5px 15px; border-bottom: solid 1px #aaa;
+    color: rgb(0,90,175); font-size: 1.7em;
+}
+
+.nav-main ul {	
+    list-style: none; margin: 0px; padding: 0px; font-weight: bold;
+}	
+
+.nav-main li {
+    float: left; display: block; white-space: nowrap; background-color: inherit;
+}
+
+.nav-main li a {
+    color: rgb(255,255,255); margin: 0px; padding: 0px 10px 0px 10px; border-right: solid 1px rgb(255,255,255); text-decoration: none; font-size: 130%;		
+}
+
+.nav-main a:hover, .nav-main a.selected {
+    background-color: inherit; color: rgb(110,110,110); text-decoration: none;
+}
+
+/*************************************/
+/* SECTION 3 - FRONT-PAGE SIDEBANNER */
+/*************************************/
+
+.sidebanner-frontpage {
+    clear: both; float: left; width: 160px; margin: 0px; padding: 0px;
+}
+
+.img-sidebanner {
+    width: 160px; margin: 0px; padding: 0px; border: none;
+}
+
+/******************************/
+/* SECTION 4 - SUB-NAVIGATION */
+/******************************/
+
+/*--------------------*/
+/* Section 4.1 - Size */
+/*--------------------*/
+
+.nav-sub {
+    clear: both; min-height: 400px; float: left; width: 160px; margin: 0px; padding: 0px; color: rgb(110,110,110);
+}
+
+/* IE6-hack for min-height. Also works for IE7-Beta2 */
+* html .nav-sub {
+    height: 400px;
+} 
+/* End IE-Hack */
+
+/*--------------------*/
+/* Section 4.2 - Menu */
+/*--------------------*/
+
+
+	
+#menu {
+    width: 260px;
+    float:left;
+}
+
+.menu_ul {
+    list-style: none;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+
+.menu_li {
+    padding: 4px 0px;
+}
+
+.menu_a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-size: 120%;
+    height: 24px;
+}
+
+.menu_a:link, .menu_a:visited {
+    color: #777;
+}
+
+.menu_a:hover {
+    color: rgb(0,90,175);
+}
+
+.menu_a:active {
+    color: black;
+}
+
+.subMenu_ul {
+    list-style: none;
+    margin-left: 25px;
+    padding: 0;
+}
+
+.subMenu_li {
+    padding: 4px 0px;
+}
+
+.subMenu_a {
+    text-decoration: none;
+    color: #222;
+    padding-left: 10px;
+    padding: 10px 0px;
+    height: 20px;
+}
+
+.subMenu_a:hover {
+    color: rgb(0,90,175);
+}
+
+.subMenu_a:active {
+    color: black;
+}
+
+
+.nav-sub ul {	
+    float: left; list-style: none; width: 160px; margin: 0px; padding: 0px; border-bottom: solid 1px rgb(200,200,200);
+}	
+
+.nav-sub li {
+    margin: 0px; padding: 0px;
+}
+
+.nav-sub li.title {
+    vertical-align: top; margin: 0px; padding: 10px 7px 10px 14px; text-transform: uppercase; color: rgb(175,175,175); font-weight: bold; font-size: 140%;
+}
+
+.nav-sub li.group a {
+    display: block; min-height: 1.5em; margin: 0px; padding: 3px 7px 2px 10px; border-top: solid 1px rgb(200,200,200); border-left: solid 5px rgb(235,235,235); text-decoration: none; text-transform: uppercase; font-weight: bold; font-size: 120%;
+}
+
+/* IE6-hack for min-height. Also works for IE7-Beta2 */
+* html .nav-sub li.group a {
+    height: 1.5em;
+}
+/* End IE-Hack */
+
+.nav-sub li a {
+    display: block; min-height: 1.5em; margin: 0px; padding: 3px 7px 2px 10px; border-left: solid 5px rgb(235,235,235); color: rgb(110,110,110); text-decoration: none; font-size: 120%;
+}
+
+/* IE6-hack for min-height. Also works for IE7-Beta2 */
+* html .nav-sub li a {
+    height: 1.5em;
+}
+/* End IE-Hack */
+
+.nav-sub li.group a:hover, .nav-sub li.group .selected {
+    border-left: solid 5px rgb(175,175,175); background-color: rgb(225,225,225); text-decoration: none;
+}
+
+.nav-sub a:hover, .nav-sub .selected {
+    border-left: solid 5px rgb(175,175,175); background-color: rgb(225,225,225); text-decoration: none;
+}
+
+.nav-sub-align {
+    text-align: left;
+}
+
+
+
+.container-content-sidebar {
+    /*float: left; width: 620px; min-height: 400px; margin: 0px; padding: 0px; background-color: rgb(255,255,255);*/
+    position: relative;
+    margin: 0px; padding: 0px; background-color: rgb(255,255,255);
+}
+
+/* IE6-hack for min-height. Also works for IE7-Beta2 */
+* html .container-content-sidebar {
+    height: 400px;
+} 
+/* End IE-Hack */
+
+/* Put a buffer between sub-navigation column and      */
+/* main-navigation so that the global page background  */
+/* color does not come through in this place           */
+
+.buffer {
+    float: left; width: 160px; height: 20px; margin: 0px; padding: 0px; background-color: rgb(255,255,255);	
+}
+
+/***********************/
+/* SECTION 6 - CONTENT */
+/***********************/
+
+/*--------------------*/
+/* Section 6.1 - Size */
+/*--------------------*/
+
+.content {
+    /*float: left; width: 425px; margin: 0px; padding: 30px 20px 0px 20px; background-color: rgb(255,255,255);*/
+    float: left; padding-left: 10px; border-left: solid 1px #aaa; min-height: 500px; 
+}
+
+
+#reportName {
+    display: inline-block; padding: 20px 0px; color: rgb(80,80,80); font-size: 200%;
+}
+
+.lastModif {
+    font-size: 80%;
+}
+
+/*-------------------------*/
+/* Section 6.2 - Pagetitle */
+/*-------------------------*/
+
+.content-pagetitle {
+    width: 390px; margin: 0px 0px 10px 0px; padding: 0px;
+}
+
+.content-pagetitle p {
+    padding: 0px; margin: 0px; font-weight: bold; font-size: 140%;
+}
+
+/*----------------------------------*/
+/* Section 6.3 - Extra container    */
+/*----------------------------------*/
+/* To ensure that no problems arise */
+/* with right and left floatings    */
+/* and make the implementation      */
+/* robuster.                        */
+/*----------------------------------*/
+
+.contentbox-container-full {
+    float: left; width: 425px; margin: 0px 0px 1.5em 0px; padding: 0px;
+}
+
+.contentbox-container-left {
+    float: left; width: 205px; margin: 0px 0px 1.5em 0px; padding: 0px;
+}
+
+.contentbox-container-right {
+    float: right; width: 205px; margin: 0px 0px 1.5em 0px; padding: 0px;
+}
+
+/*-----------------------------*/
+/* Section 6.4 - Content title */
+/*-----------------------------*/
+
+.contentbox-title-noshading-noline {
+    display: block; margin: 0px; padding: 0px; background-color: transparent; text-transform: none; font-weight: bold; font-size: 150%;
+}
+
+.contentbox-title-noshading-line {
+    display: block; margin: 0px 0px 0.2em 0px; padding: 0px; border-bottom: solid 2px rgb(135,135,135); background-color: transparent; text-transform: none; font-weight: bold; font-size: 150%;
+}
+
+.contentbox-title-shading {
+    margin: 0px; padding: 1px 0px 2px 3px; background-color: rgb(225,225,225); font-weight: bold; font-size: 150%;	
+}
+
+/*--------------------------------*/
+/* Section 6.5 - Contentbox size  */
+/*--------------------------------*/
+
+/* No shading */
+.contentbox-noshading {
+    margin: 0px; padding: 0.7em 0px 0px 0px; background-color: transparent;
+}
+
+/* Shading */
+.contentbox-shading {
+    margin: 0px; padding: 7px 10px 5px 10px; background-color: transparent;
+}
+
+/*-------------------------------*/
+/* Section 6.6 - Contentbox text */
+/*-------------------------------*/
+
+/* Heading */
+h1 {
+    clear: left; margin: 1.0em 0px 1.0em 0px; font-weight: bold; font-size: 150%;
+}
+
+h2 {
+    clear: left; margin: 1.5em 0px 1.0em 0px; font-weight: bold; font-size: 140%;
+}
+
+h3 {
+    clear: left; margin: 1.0em 0px 0.6em 0px;	font-weight: bold; font-size: 130%;
+}
+
+h4 {
+    clear: left; margin: 0.5em 0px 0.5em 0px;	font-weight: bold; font-style: italic; font-size: 130%;
+}
+
+/* Paragraph text */
+p {
+    clear: left; margin: 0em 0px 0.5em 0px; padding: 0px; font-size: 130%;
+}
+
+/* Quote */
+p.quote {
+    clear: left; margin: 0em 30px 0.6em 30px;	line-height: 120%; font-size: 120%;
+}
+
+/* Embedded */
+.embed {
+    float: left; width: 120px; margin: 2px 7px 2px 0px; padding: 5px 5px 5px 5px; background-color: rgb(225,225,225); font-style: italic; font-weight: bold;  line-height: 1.2em; font-size: 180%;
+}
+
+.embed-caption {
+    float: left; margin: 5px 0px 0px 0px; padding: 0px; font-style: italic; font-weight: normal; line-height: 1.2em; font-size: 50%;
+}
+
+/* Unordered list */
+.content ul {
+    margin: 0px 10px 0px 10px; padding: 0px 0px 0px 30px; list-style-type: disc; list-style-position: outside; font-size: 130%;
+}
+
+/* Ordered List */
+.content ol {
+    margin: 0px 10px 0px 17px; padding: 0px 0px 0px 30px; list-style-type: decimal; list-style-position: outside; font-size: 130%;
+}
+
+/*--------------------------*/
+/* Section 6.7 - Datatables */
+/*--------------------------*/
+
+.tabledata {
+    clear: left; margin: 0.5em 0px 0.2em 30px; border: solid 1px rgb(150,150,150); empty-cells: show; border-collapse: collapse; background-color: rgb(225,225,225);
+}
+
+.tabledata tr {
+    margin: 0px; padding: 0px;
+}
+
+.tabledata td {
+    padding: 2px 7px 2px 7px; border: solid 1px rgb(150,150,150); text-align: left; font-size: 120%;
+}
+
+.tabledata th {
+    margin: 0px; padding: 2px 7px 2px 7px; border: solid 1px rgb(150,150,150); empty-cells: show; text-align: left; font-size: 120%; 	
+}
+
+p.tabledata-caption {
+    margin: 0em 0px 10px 30px; padding: 0px; clear: both; text-align: left; font-size: 120%;
+}
+
+/*----------------------*/
+/* Section 6.8 - Images */
+/*----------------------*/
+
+/* No border */
+.img-left-noborder {
+    float: left; margin: 0.3em 7px 3px 0px;
+}
+
+.img-right-noborder {
+    float: right; margin: 0.3em 0px 3px 7px;
+}
+
+/* Border */
+.img-left-border {
+    float: left; margin: 0.3em 7px 3px 0px; border: solid 1px rgb(150,150,150);
+}
+
+.img-right-border {
+    float: right; margin: 0.3em 0px 3px 7px; border: solid 1px rgb(150,150,150);	
+}
+
+/***********************/
+/* SECTION 7 - SIDEBAR */
+/***********************/
+
+.sidebar {
+    float: right; width: 144px; margin: 0px ; padding: 57px 5px 0px 0px; background-color: rgb(255,255,255);
+}
+
+/*-----------------------*/
+/* Section 7.2 - Textbox */
+/*-----------------------*/
+
+.sidebarbox-noborder {
+    width: 140px; margin: 0em 0px 1.0em 0px; padding: 0px;
+}
+
+.sidebarbox-border {
+    width: 130px; margin: 0px 0px 1.0em 0px; padding: 4px 4px 4px 4px; border: solid 1px rgb(200,200,200);
+}
+
+/*-----------------------------*/
+/* Section 7.3 - Textbox title */
+/*-----------------------------*/
+
+.sidebarbox-title-noshading-noline {
+    display: block; margin: 0px 0px 0.5em 0px; padding: 1px 0px 1px 0px;font-weight: bold; font-size: 120%;
+}
+
+.sidebarbox-title-noshading-line {
+    display: block; margin: 0px 0px 0.5em 0px; padding: 1px 0px 1px 0px; border-bottom: solid 1px rgb(135,135,135); background-color: transparent; font-weight: bold; font-size: 120%;
+}
+
+.sidebarbox-title-shading {
+    display: block; margin: 0px 0px 0.5em 0px; padding: 2px 5px 2px 5px; background-color: rgb(225,225,225); font-weight: bold; font-size: 120%;
+}
+
+/*------------------------------*/
+/* Section 7.4 - Paragraph text */
+/*------------------------------*/
+
+.sidebarbox-noborder p {
+    margin: 0px 4px 0.4em 4px; padding: 0px; background-color: transparent; font-size: 110%;
+}
+
+.sidebarbox-border p {
+    margin: 0px 0px 0.4em 0px; padding: 0px; background-color: transparent; font-size: 110%;
+}
+
+/**************************/
+/* SECTION 8 - LOGIN PAGE */
+/**************************/
+
+#page-login form {
+    background-color: white;
+    border: solid 1px #aaa;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+#login-header {
+    background-color: #333;
+}
+
+#login-header h1 {
+    font-weight: normal; text-align: center; margin: 0px; padding-top: 18px; padding-bottom: 20px;
+}
+
+#login-center {
+    padding: 20px; color : #777;
+}
+
+#login-center input {
+    width: 460px; height: 35px; margin-top: 5px; margin-bottom: 15px; padding: 5px; border: solid 1px #aaa;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+#login-submit {
+    float: right; color : white; text-align: right; font-weight: bold; background-color: rgb(0,60,170); margin-right: 40px; padding: 10px 28px; border: none;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+  -webkit-transition: all 0.2s ease-in-out;
+     -moz-transition: all 0.2s ease-in-out;
+       -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+#login-submit:hover {
+    background-color: royalblue;
+}
+
+
+/***************************************************/
+/* SECTION 9 - HYPERLINKS FOR NON-NAVIGATION TEXTS */
+/***************************************************/
+
+.content a, .sidebar a {
+    color: rgb(0,0,0);
+}
+
+.content a:hover, .sidebar a:hover {
+    color: rgb(110,110,110); text-decoration: none;
+}
+
+.content a:visited, .sidebar a:visited {
+    color: rgb(110,110,110);
+}
+
+.footer a {
+    color: rgb(150,150,150); text-decoration: underline;
+}
+
+.footer a:hover {
+    color: rgb(0,0,0); text-decoration: none;
+}
+
+/********************************/
+/* SECTION 10 - GENERIC CLASSES */
+/********************************/
+
+
+.nav-global-font {
+    font-size: 1.0em;
+}
+
+.nav-sub-font {
+    font-size: 1.0em;
+}
+
+.content-font {
+    font-size: 1.0em; line-height: 1.7em; color: rgb(110,110,110);
+}
+
+.sidebar-font {
+    font-size: 1.0em; line-height: 1.4em; color: rgb(110,110,110);
+}
+
+/* Percentage value does not work in "footer", so we     */
+/* cannot give the normed size of "1.0em" here and scale */
+/* it up inside the "footer". Thus we define the final   */
+/* font-size here the way it will appear on screen.      */
+.footer-font {
+    font-size: 1.1em; color: rgb(150,150,150);
+}
+
+/*--------------------------------------*/
+/* Section 10.2 - Horizontal alignments */
+/*--------------------------------------*/
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/*-------------------------------------*/
+/* Section 10.3 - Title decoration box */
+/*-------------------------------------*/
+
+.box-on {
+    float: left; width: 1.0em; margin-right: 0.2em; padding-left: 0.3em;
+}
+
+.box-off {
+    display: none;
+}
+
+/*---------------------------*/
+/* Section 10.4  Text colors */
+/*---------------------------*/
+
+/* Basic Colors */
+.txt-white {
+    color: rgb(255,255,255);
+}
+
+.txt-black {
+    color: rgb(0,0,0);
+}
+
+/* Grey */
+.txt-grey01 {
+    color: rgb(242,242,242);
+}
+
+.txt-grey02 {
+    color: rgb(230,230,230);
+}
+
+.txt-grey03 {
+    color: rgb(217,217,217);
+}
+
+.txt-grey04 {
+    color: rgb(204,204,204);
+}
+
+.txt-grey05 {
+    color: rgb(191,191,191);
+}
+
+.txt-grey06 {
+    color: rgb(178,178,178);
+}
+
+.txt-grey07 {
+    color: rgb(153,153,153);
+}
+
+.txt-grey08 {
+    color: rgb(127,127,127);
+}
+
+.txt-grey09 {
+    color: rgb(89,89,89);
+}
+
+.txt-grey10 {
+    color: rgb(51,51,51);
+}
+
+/* Yellow */
+.txt-yellow01 {
+    color: rgb(254,252,232);
+}
+
+.txt-yellow02 {
+    color: rgb(253,249,201);
+}
+
+.txt-yellow03 {
+    color: rgb(253,246,185);
+}
+
+.txt-yellow04 {
+    color: rgb(252,243,162);
+}
+
+.txt-yellow05 {
+    color: rgb(251,239,139);
+}
+
+.txt-yellow06 {
+    color: rgb(250,236,116);
+}
+
+.txt-yellow07 {
+    color: rgb(249,233,93);
+}
+
+.txt-yellow08 {
+    color: rgb(249,230,69);
+}
+
+.txt-yellow09 {
+    color: rgb(248,227,46);
+}
+
+.txt-yellow10 {
+    color: rgb(247,224,23);
+}
+
+/* Blue */
+.txt-blue01 {
+    color: rgb(238,237,249);
+}
+
+.txt-blue02 {
+    color: rgb(222,220,242);
+}
+
+.txt-blue03 {
+    color: rgb(205,202,236);
+}
+
+.txt-blue04 {
+    color: rgb(189,185,229);
+}
+
+.txt-blue05 {
+    color: rgb(172,167,223);
+}
+
+.txt-blue06 {
+    color: rgb(155,149,217);
+}
+
+.txt-blue07 {
+    color: rgb(139,132,210);
+}
+
+.txt-blue08 {
+    color: rgb(122,114,204);
+}
+
+.txt-blue09 {
+    color: rgb(106,97,197);
+}
+
+.txt-blue10 {
+    color: rgb(89,79,191);
+}
+
+/* Green */
+.txt-green01 {
+    color: rgb(237,246,229);
+}
+
+.txt-green02 {
+    color: rgb(220,238,204);
+}
+
+.txt-green03 {
+    color: rgb(202,229,178);
+}
+
+.txt-green04 {
+    color: rgb(185,220,153);
+}
+
+.txt-green05 {
+    color: rgb(167,211,127);
+}
+
+.txt-green06 {
+    color: rgb(149,203,102);
+}
+
+.txt-green07 {
+    color: rgb(132,194,76);
+}
+
+.txt-green08 {
+    color: rgb(114,185,51);
+}
+
+.txt-green09 {
+    color: rgb(97,177,25);
+}
+
+.txt-green10 {
+    color: rgb(79,168,0);
+}
+
+/* Red */
+.txt-red01 {
+    color: rgb(252,235,233);
+}
+
+.txt-red02 {
+    color: rgb(248,216,211);
+}
+
+.txt-red03 {
+    color: rgb(245,196,188);
+}
+
+.txt-red04 {
+    color: rgb(242,177,166);
+}
+
+.txt-red05 {
+    color: rgb(238,157,144);
+}
+
+.txt-red06 {
+    color: rgb(235,137,122);
+}
+
+.txt-red07 {
+    color: rgb(232,118,100);
+}
+
+.txt-red08 {
+    color: rgb(229,98,77);
+}
+
+.txt-red09 {
+    color: rgb(225,79,55);
+}
+
+.txt-red10 {
+    color: rgb(222,59,33);
+}
+
+/*----------------------------------*/
+/* Section 10.5 - Background colors */
+/*----------------------------------*/
+
+/* Basic Colors */
+.bg-white {
+    background-color: rgb(255,255,255);
+}
+
+.bg-black {
+    background-color: rgb(0,0,0);
+}
+
+/* Grey */
+.bg-grey01 {
+    background-color: rgb(242,242,242);
+}
+
+.bg-grey02 {
+    background-color: rgb(230,230,230);
+}
+
+.bg-grey03 {
+    background-color: rgb(217,217,217);
+}
+
+.bg-grey04 {
+    background-color: rgb(204,204,204);
+}
+
+.bg-grey05 {
+    background-color: rgb(191,191,191);
+}
+
+.bg-grey06 {
+    background-color: rgb(178,178,178);
+}
+
+.bg-grey07 {
+    background-color: rgb(153,153,153);
+}
+
+.bg-grey08 {
+    background-color: rgb(127,127,127);
+}
+
+.bg-grey09 {
+    background-color: rgb(89,89,89);
+}
+
+.bg-grey10 {
+    background-color: rgb(51,51,51);
+}
+
+/* Yellow */
+.bg-yellow01 {
+    background-color: rgb(254,252,232);
+}
+
+.bg-yellow02 {
+    background-color: rgb(253,249,201);
+}
+
+.bg-yellow03 {
+    background-color: rgb(253,246,185);
+}
+
+.bg-yellow04 {
+    background-color: rgb(252,243,162);
+}
+
+.bg-yellow05 {
+    background-color: rgb(251,239,139);
+}
+
+.bg-yellow06 {
+    background-color: rgb(250,236,116);
+}
+
+.bg-yellow07 {
+    background-color: rgb(249,233,93);
+}
+
+.bg-yellow08 {
+    background-color: rgb(249,230,69);
+}
+
+.bg-yellow09 {
+    background-color: rgb(248,227,46);
+}
+
+.bg-yellow10 {
+    background-color: rgb(247,224,23);
+}
+
+/* Blue */
+.bg-blue01 {
+    background-color: rgb(238,237,249);
+}
+
+.bg-blue02 {
+    background-color: rgb(222,220,242);
+}
+
+.bg-blue03 {
+    background-color: rgb(205,202,236);
+}
+
+.bg-blue04 {
+    background-color: rgb(189,185,229);
+}
+
+.bg-blue05 {
+    background-color: rgb(172,167,223);
+}
+
+.bg-blue06 {
+    background-color: rgb(155,149,217);
+}
+
+.bg-blue07 {
+    background-color: rgb(139,132,210);
+}
+
+.bg-blue08 {
+    background-color: rgb(122,114,204);
+}
+
+.bg-blue09 {
+    background-color: rgb(106,97,197);
+}
+
+.bg-blue10 {
+    background-color: rgb(89,79,191);
+}
+
+/* Green */
+.bg-green01 {
+    background-color: rgb(237,246,229);
+}
+
+.bg-green02 {
+    background-color: rgb(220,238,204);
+}
+
+.bg-green03 {
+    background-color: rgb(202,229,178);
+}
+
+.bg-green04 {
+    background-color: rgb(185,220,153);
+}
+
+.bg-green05 {
+    background-color: rgb(167,211,127);
+}
+
+.bg-green06 {
+    background-color: rgb(149,203,102);
+}
+
+.bg-green07 {
+    background-color: rgb(132,194,76);
+}
+
+.bg-green08 {
+    background-color: rgb(114,185,51);
+}
+
+.bg-green09 {
+    background-color: rgb(97,177,25);
+}
+
+.bg-green10 {
+    background-color: rgb(79,168,0);
+}
+
+/* Red */
+.bg-red01 {
+    background-color: rgb(252,235,233);
+}
+
+.bg-red02 {
+    background-color: rgb(248,216,211);
+}
+
+.bg-red03 {
+    background-color: rgb(245,196,188);
+}
+
+.bg-red04 {
+    background-color: rgb(242,177,166);
+}
+
+.bg-red05 {
+    background-color: rgb(238,157,144);
+}
+
+.bg-red06 {
+    background-color: rgb(235,137,122);
+}
+
+.bg-red07 {
+    background-color: rgb(232,118,100);
+}
+
+.bg-red08 {
+    background-color: rgb(229,98,77);
+}
+
+.bg-red09 {
+    background-color: rgb(225,79,55);
+}
+
+.bg-red10 {
+    background-color: rgb(222,59,33);
+}
+
+/******************************/
+/* SECTION 11 - MISCELLANEOUS */
+/******************************/
+
+/* Horizontal line */
+hr {
+    clear: both; width: 425px; height: 1px; border: none;
+}
+
+/* HTML-code examples */
+.showcode {
+    /*font-family: monospace;*/ font-weight: bold; font-size: 13px; color: rgb(255,0,0);
+}
+
+/* Hide HTML-tags. Good when no pagestyle supported by browser */
+.hide {
+    display: none;
+}
+
+br {
+    clear: both;
+}
+
+p.css-vertical-text {
+	color:#333;
+	border:0px solid red;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
+	white-space:nowrap;
+	display:block;
+	bottom:0;
+	width:20px;
+	height:20px;
+	/*font-family: ‘Trebuchet MS’, Helvetica, sans-serif;*/
+	font-size:24px;
+	font-weight:normal;
+	text-shadow: 0px 0px 1px #333;
+}
+
+/*-------------------------------*/
+/* Section 10.6 -Bootstrap Table */
+/*-------------------------------*/
+
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  width: 100%;
+  border: 0;
+  color: rgb(0,50,200);
+}
+
+.table th,
+.table td {
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table td {
+    text-align: right;
+    border-right: 1px solid #f5f5f5;
+}
+
+.table td:first-child {
+    color: rgb(40,40,40);
+    text-align: left;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+
+.table th {
+  font-weight: bold;
+  color: rgb(40,40,40);
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+
+.table-bordered {
+  border-collapse: separate;
+  *border-collapse: collapse;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.table-bordered thead:first-child tr:first-child > th:first-child,
+.table-bordered tbody:first-child tr:first-child > td:first-child,
+.table-bordered tbody:first-child tr:first-child > th:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered thead:first-child tr:first-child > th:last-child,
+.table-bordered tbody:first-child tr:first-child > td:last-child,
+.table-bordered tbody:first-child tr:first-child > th:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:first-child,
+.table-bordered tbody:last-child tr:last-child > td:first-child,
+.table-bordered tbody:last-child tr:last-child > th:first-child,
+.table-bordered tfoot:last-child tr:last-child > td:first-child,
+.table-bordered tfoot:last-child tr:last-child > th:first-child {
+  -webkit-border-bottom-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+}
+
+.table-bordered thead:last-child tr:last-child > th:last-child,
+.table-bordered tbody:last-child tr:last-child > td:last-child,
+.table-bordered tbody:last-child tr:last-child > th:last-child,
+.table-bordered tfoot:last-child tr:last-child > td:last-child,
+.table-bordered tfoot:last-child tr:last-child > th:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+}
+
+.table-bordered tfoot + tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 0;
+          border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+}
+
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+          border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+}
+
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: #f5f5f5;
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+  background-color: #f5f5f5;
+}
+
+table td[class*="span"],
+table th[class*="span"],
+.row-fluid table td[class*="span"],
+.row-fluid table th[class*="span"] {
+  display: table-cell;
+  float: none;
+  margin-left: 0;
+}

@@ -1,0 +1,94 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!-- <!DOCTYPE html> -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      lang="en" xml:lang="en">
+
+    <head>
+        <title>DAA Reporting Portal</title>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" />
+        <link rel="stylesheet" type="text/css" href="./style.css"></link>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <wicket:head>
+        <script src="http://www.kunalbabre.com/projects/table2CSV.js"></script>
+    </wicket:head>
+
+
+    <body>
+        <div id="page-container">
+
+            <!-- HEADER -->
+            <!-- Global Navigation -->
+            <h3 class="hide">Global Navigation</h3>
+            <div class="nav-global-container">
+                <div class="nav-global nav-global-font">
+                    <ul>
+                        <li><a href="#"><span  wicket:id="languagePanel" >chooseLanguage</span></a></li>
+                        <li><a href="#" wicket:id="home" id="homelink">Home</a></li>
+                        <li><a href="#" wicket:id="logout">Logout</a></li>					
+                    </ul>
+                </div>
+            </div>	
+            
+            <div><img class="img-header" src="img/head.jpg" alt=""/></div>
+            <div class="site-slogan">
+                <span  wicket:id="slogan">Default Slogan</span>
+                <!--<span>Dynamic Airtime Advance</span>-->
+            </div>
+
+            <!-- Main navigation -->										
+            <h3 class="hide">Main Navigation</h3>		
+            <div class="nav-main nav-main-font">			
+                <span  wicket:id="title">Default Label</span>
+            </div>	
+            <!-- SUB NAVIGATION -->
+            <div id="menu">
+                <ul class="menu_ul">
+                    <li wicket:id="menu" class="menu_li">
+                        <a wicket:id="link"  class="menu_a">
+                            <span  wicket:id="label" class="menu_span">default Label</span>
+                        </a>
+                        <ul class="subMenu_ul">
+                            <li wicket:id="subMenu"  class="subMenu_li">
+                                <a wicket:id="subLink" class="subMenu_a">
+                                    <span  wicket:id="subLabel"  class="subMenu_span">default Label</span>
+                                </a> 
+                            </li>
+                        </ul>   
+                    </li>
+                </ul>   
+            </div>
+            <!--  </div> -->
+
+            <!-- WRAP CONTENT AND SIDEBAR -->
+            <div class="container-content-sidebar">						
+
+                <!-- 	CONTENT -->
+                <h3 class="hide">Content</h3>
+                <div class="content content-font">
+
+                    <!-- Page title -->		
+                    <span wicket:id="feedback">feedbackmessages will be put here</span>
+
+                    <div class="contentbox-noshading">
+                        <wicket:child>
+                            <p>Welcome to Dynamic Airtime Advance Consumer Services</p>
+                        </wicket:child>
+                    </div>
+                </div>
+
+                <!-- SIDEBAR -->
+                <h3 class="hide">Sidebar</h3>
+                <div class="sidebar sidebar-font">
+                    <!-- Empty sidebar -->
+                </div>
+
+                <!-- END WRAP CONTENT AND SIDEBAR -->			
+            </div>
+        </div>
+    </body>
+</html>

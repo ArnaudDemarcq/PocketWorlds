@@ -1,0 +1,37 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+      lang="en" xml:lang="en">
+    <head>
+        <title>Login Page</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />-->
+        <link rel="stylesheet" type="text/css" href="./style.css"></link>
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> 
+    </head>
+    <body>
+        <div id="page-login" data-role="page">
+            <form data-ajax="false" wicket:id="loginForm">
+                <div id="login-header" data-role="header" data-theme="b">
+                    <h1>Administrator Login</h1>
+                </div>
+                <div wicket:id="feedback"></div>
+                <div id="login-center" data-role="content">
+                    <label>Username</label>
+                    <br/>    
+                    <input type="text" id="name" wicket:id="name"/>
+                    <br/>    
+                    <label>Password</label>
+                    <br/>    
+                    <input type="password" id="name" wicket:id="password"/>
+                    <br/>
+                </div>
+                <input id="login-submit" type="submit" data-theme="b" data-role="button" wicket:id="submitButton" value="Login"/>
+            </form>
+        </div>
+
+    </body>
+</html>
+
