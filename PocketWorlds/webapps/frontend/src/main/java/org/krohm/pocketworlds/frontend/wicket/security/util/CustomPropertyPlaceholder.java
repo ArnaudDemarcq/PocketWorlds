@@ -18,7 +18,9 @@ public class CustomPropertyPlaceholder extends PropertyPlaceholderConfigurer {
     private final Properties properties = new Properties();
 
     @Override
-    protected void processProperties(ConfigurableListableBeanFactory beanFactoryToProcess, Properties props) throws BeansException {
+    protected void processProperties(
+            ConfigurableListableBeanFactory beanFactoryToProcess,
+            Properties props) throws BeansException {
         super.processProperties(beanFactoryToProcess, props);
         properties.clear();
         properties.putAll(props);

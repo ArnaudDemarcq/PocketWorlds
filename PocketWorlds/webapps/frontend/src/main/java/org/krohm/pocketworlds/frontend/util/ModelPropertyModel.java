@@ -24,8 +24,6 @@ public class ModelPropertyModel implements IModel {
         this.constantObject = constantObject;
         this.object1Name = object1Name;
         this.object2Name = object2Name;
-
-        //LOGGER.info("The Object name is  : " + constantObject + " object1Name value is : " + object1Name + " object2Name value is : " + object2Name);
     }
 
     @Override
