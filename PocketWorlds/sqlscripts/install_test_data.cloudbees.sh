@@ -7,8 +7,8 @@ SELECT '1 : CLEANING DATABASE ...' AS OPERATION , CURRENT_TIMESTAMP AS START_DAT
 source ./database_creation_scripts/delete_database_structure.sql
 COMMIT;
 EOF
-ECHO
-ECHO
+echo ' '
+echo ' '
 
 $MYSQL_COMMAND_LINE << EOF
 SET autocommit = 0;
@@ -16,8 +16,8 @@ SELECT '2 : CREATING DATABASE STRUCTURE ...' AS OPERATION , CURRENT_TIMESTAMP AS
 source ./database_creation_scripts/create_database_structure.sql
 COMMIT;
 EOF
-ECHO
-ECHO
+echo ' '
+echo ' '
 
 $MYSQL_COMMAND_LINE << EOF
 SET autocommit = 0;
@@ -25,5 +25,5 @@ SELECT '3 : DATA INSERTION ...', CURRENT_TIMESTAMP;
 source ./test_data/create_test_data.sql
 COMMIT;
 EOF
-ECHO
-ECHO
+echo ' '
+echo ' '
