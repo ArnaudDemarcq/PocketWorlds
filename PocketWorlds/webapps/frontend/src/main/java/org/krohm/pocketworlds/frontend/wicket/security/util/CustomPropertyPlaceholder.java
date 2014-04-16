@@ -16,7 +16,7 @@ import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 public class CustomPropertyPlaceholder extends PropertyPlaceholderConfigurer {
 
     private final Properties properties = new Properties();
-    
+
     @Override
     protected void processProperties(ConfigurableListableBeanFactory beanFactoryToProcess, Properties props) throws BeansException {
         super.processProperties(beanFactoryToProcess, props);
@@ -27,7 +27,4 @@ public class CustomPropertyPlaceholder extends PropertyPlaceholderConfigurer {
     public Properties getProperties() {
         return properties;
     }
-    
-    
-    
 }

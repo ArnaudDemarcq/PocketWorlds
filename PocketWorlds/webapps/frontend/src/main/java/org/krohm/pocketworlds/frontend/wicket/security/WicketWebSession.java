@@ -74,7 +74,7 @@ public class WicketWebSession extends AbstractAuthenticatedWebSession {
     public boolean isSignedIn() {
         getHashTableForLdap();
         // Do not check again if user has been verified
-        if (this.isLogged != null && this.isLogged != false) {
+        if (this.isLogged != null && this.isLogged) {
             return true;
         }
         // Then try to log in
@@ -89,7 +89,7 @@ public class WicketWebSession extends AbstractAuthenticatedWebSession {
             }
             return false;
         }
-        return (this.isLogged == true);
+        return (this.isLogged);
     }
 
     public static WicketWebSession get() {

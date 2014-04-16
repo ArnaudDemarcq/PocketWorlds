@@ -11,8 +11,10 @@ import org.apache.wicket.authroles.authorization.strategies.role.Roles;
 import org.apache.wicket.authroles.authorization.strategies.role.annotations.AuthorizeInstantiation;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
-import org.apache.wicket.markup.html.link.*;
-import org.apache.wicket.markup.html.list.*;
+import org.apache.wicket.markup.html.link.BookmarkablePageLink;
+import org.apache.wicket.markup.html.link.Link;
+import org.apache.wicket.markup.html.list.ListItem;
+import org.apache.wicket.markup.html.list.ListView;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
@@ -40,6 +42,7 @@ public abstract class BasePage extends WebPage {
     }
 
     abstract protected IModel<String> getTitle();
+
     abstract protected IModel<String> getSlogan();
 
     private void init() {
@@ -89,14 +92,14 @@ public abstract class BasePage extends WebPage {
 
     private List<ClassLinkLabel> getClassLinkLabel() {
         List<ClassLinkLabel> returnList = new ArrayList<ClassLinkLabel>();
-       
+
         return returnList;
     }
 
     private List<ClassLinkLabel> getReportingLabels() {
         List<ClassLinkLabel> returnList = new ArrayList<ClassLinkLabel>();
         Roles currentUserRoles = WicketWebSession.get().getRoles();
-    
+
         return returnList;
     }
 

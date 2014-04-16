@@ -12,8 +12,9 @@ import org.apache.wicket.model.IModel;
  * @author Arnaud
  */
 public class GetStringModel implements IModel<String> {
-    Component component;
-    String getStringKey;
+
+    private Component component;
+    private String getStringKey;
 
     public GetStringModel(Component component, String getStringKey) {
         this.component = component;
@@ -33,7 +34,4 @@ public class GetStringModel implements IModel<String> {
     @Override
     public void detach() {
     }
-    
-    
-    
 }

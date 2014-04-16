@@ -18,15 +18,13 @@ public class HomePage extends BasePage {
         super(params);
     }
 
-    
-    
-     @Override
+    @Override
     protected IModel<String> getTitle() {
-        return new GetStringModel(this,"daa.basepage.label.home");
+        return new GetStringModel(this, "daa.basepage.label.home");
     }
-     @Override
+
+    @Override
     protected IModel<String> getSlogan() {
-        return new GetStringModel(this,"daa.basepage.label.slogan.home");
+        return new GetStringModel(this, "daa.basepage.label.slogan.home");
     }
-    
 }
