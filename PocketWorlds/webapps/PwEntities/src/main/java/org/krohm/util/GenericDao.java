@@ -24,6 +24,7 @@ public abstract class GenericDao<T, K> {
     public GenericDao(Class<T> clazzT, Class<K> clazzK) {
         this.clazzT = clazzT;
         this.clazzK = clazzK;
+        LOGGER.info("Dao created for class: <" + this.clazzT + "> and key: <" + this.clazzK + ">");
     }
 
     public GenericDao(Class<T> clazz) {
