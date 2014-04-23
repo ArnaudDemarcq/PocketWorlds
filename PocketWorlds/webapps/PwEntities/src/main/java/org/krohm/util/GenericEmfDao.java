@@ -27,7 +27,7 @@ public class GenericEmfDao<Key, Entity> {
     public GenericEmfDao(Class<Key> clazzKey, Class<Entity> clazzEntity) {
         this.clazzKey = clazzKey;
         this.clazzEntity = clazzEntity;
-        LOGGER.info("Dao created for class: <" + this.clazzEntity + "> and key: <" + this.clazzKey + ">");
+        LOGGER.info("Emf Dao created for class: <" + this.clazzEntity + "> and key: <" + this.clazzKey + ">");
     }
 
     public GenericEmfDao(Class<Entity> clazzEntity) {
