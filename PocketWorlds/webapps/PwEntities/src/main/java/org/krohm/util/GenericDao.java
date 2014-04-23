@@ -34,29 +34,29 @@ public abstract class GenericDao<T, K> {
     public GenericDao() {
     }
 
-    public T findById(Class<T> typeClass, K id) {
+    public final T findById(Class<T> typeClass, K id) {
         return (T) getEm().find(typeClass, id);
     }
 
-    public T findById(K id) {
+    public final T findById(K id) {
         return (T) getEm().find(clazzT, id);
     }
 
-    public void flush() {
+    public final void flush() {
         getEm().flush();
     }
 
-    public void create(T o) {
+    public final void create(T o) {
         getEm().persist(o);
     }
 
     //@Transactional
-    public void update(T o) {
+    public final void update(T o) {
         getEm().merge(o);
     }
 
     //@Transactional
-    public void delete(Class<T> typeClass, K id) {
+    public final void delete(Class<T> typeClass, K id) {
         Object o = getEm().getReference(typeClass, id);
         getEm().remove(o);
     }

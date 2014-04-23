@@ -47,7 +47,7 @@ public class GenericEmfDao<Key, Entity> {
         return this.emf;
     }
 
-    public Entity findById(Class<Entity> typeClass, Key id) {
+    public final Entity findById(Class<Entity> typeClass, Key id) {
         EntityManager em = getEm();
         try {
             return em.find(typeClass, id);
@@ -58,7 +58,7 @@ public class GenericEmfDao<Key, Entity> {
         }
     }
 
-    public Entity findById(Key id) {
+    public final Entity findById(Key id) {
         EntityManager em = getEm();
         try {
             return (Entity) em.find(clazzEntity, id);
@@ -69,7 +69,7 @@ public class GenericEmfDao<Key, Entity> {
         }
     }
 
-    public void flush() {
+    public final void flush() {
         EntityManager em = getEm();
         try {
             em.flush();
@@ -80,7 +80,7 @@ public class GenericEmfDao<Key, Entity> {
         }
     }
 
-    public void create(Entity o) {
+    public final void create(Entity o) {
         EntityManager em = getEm();
         try {
             em.persist(o);
@@ -91,7 +91,7 @@ public class GenericEmfDao<Key, Entity> {
         }
     }
 
-    public void update(Entity o) {
+    public final void update(Entity o) {
         EntityManager em = getEm();
         try {
             em.merge(o);
@@ -102,7 +102,7 @@ public class GenericEmfDao<Key, Entity> {
         }
     }
 
-    public void delete(Class<Entity> typeClass, Key id) {
+    public final void delete(Class<Entity> typeClass, Key id) {
         EntityManager em = getEm();
         try {
             Object o = em.find(typeClass, id);
